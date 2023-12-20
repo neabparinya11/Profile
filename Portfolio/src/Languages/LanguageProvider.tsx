@@ -1,5 +1,5 @@
 import { ReactElement, createContext, useState } from "react";
-import { ILanguageProvider, IProviderData } from "../Interfaces/ILanguageProvider";
+import { IProviderData } from "../Interfaces/ILanguageProvider";
 import th from '../Languages/th/translations.json';
 import en from '../Languages/en/translations.json';
 
@@ -9,10 +9,7 @@ export const languageOptions = {
     th: "Thai"
 }
 
-export const LanguageContext = createContext<ILanguageProvider>({
-    userLanguage: "en",
-    dictionary: dictionaryList.en
-})
+export const LanguageContext = createContext<IProviderData>({} as IProviderData)
 
 export function LanguageContextProvider({children}:{children:ReactElement}){
     const [userLanguage, setUserLanguage] = useState("en")
@@ -28,7 +25,7 @@ export function LanguageContextProvider({children}:{children:ReactElement}){
         }
     }
     const provider: IProviderData = {
-        userLanguage,
+        userLanguage: userLanguage,
         dictionary: userDictionary,
         userLanguageChange: userLanguageChange
     }
