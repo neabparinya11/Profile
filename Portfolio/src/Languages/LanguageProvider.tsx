@@ -3,11 +3,11 @@ import { IProviderData } from "../Interfaces/ILanguageProvider";
 import th from '../Languages/th/translations.json';
 import en from '../Languages/en/translations.json';
 
-export const dictionaryList = { th, en }
-export const languageOptions = {
-    en: "English",
-    th: "Thai"
-}
+const dictionaryList = { th, en }
+// const languageOptions = {
+//     en: "English",
+//     th: "Thai"
+// }
 
 export const LanguageContext = createContext<IProviderData>({} as IProviderData)
 
