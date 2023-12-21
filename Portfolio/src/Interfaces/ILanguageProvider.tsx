@@ -21,9 +21,9 @@ export interface ILanguageForm{
 }
 
 export interface IProviderData{
-    userLanguage: string,
+    Language: string,
     dictionary: ILanguageForm,
-    userLanguageChange: (selected: string) => void
+    userLanguageChange: (select:string) => void
 }
 
 export interface IDictionaryList{
