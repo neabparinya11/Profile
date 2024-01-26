@@ -1,0 +1,44 @@
+{
+    index: 1,
+    skill: "Python"
+  },
+  {
+    index: 2,
+    skill: "C++"
+  },
+  {
+    index: 3,
+    skill: "C#"
+  },
+  {
+    index: 4,
+    skill: "Java"
+  },
+  {
+    index: 5,
+    skill: "HTML"
+  },
+  {
+    index: 6,
+    skill: "JavaScript"
+  },
+  {
+    index: 7,
+    skill: "CSS"
+  },
+  {
+    index: 8,
+    skill: "ReactJS"
+  },
+  {
+    index: 9,
+    skill: "dotNet Core"
+  },
+  {
+    index: 10,
+    skill: "Tensorflow"
+  },
+  {
+    index: 11,
+    skill: "PyTorch"
+  }

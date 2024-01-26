@@ -7,6 +7,11 @@ const dictionaryList = { th, en }
 
 export const LanguageContext = createContext<IProviderData>({} as IProviderData)
 
+/**
+ * 
+ * @param children is React component 
+ * @returns 
+ */
 export function LanguageContextProvider({children}:{children:ReactElement}){
     const [userLanguage, setUserLanguage] = useState("en")
     const [userDictionary, setUserDictionary] = useState(dictionaryList["en"])
